@@ -23,17 +23,27 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://www.saucedemo.com/')
 
-WebUI.verifyElementVisible(findTestObject('Page_Swag Labs/div_Accepted usernames arestandard_userlocked_out_userproblem_userperformance_glitch_user'))
+WebUI.verifyElementVisible(findTestObject('Login Page Saucedemo/content_User Credential Content'))
 
-WebUI.verifyElementVisible(findTestObject('Page_Swag Labs/div_Password for all userssecret_sauce'))
+WebUI.verifyElementVisible(findTestObject('Login Page Saucedemo/content_Password Credential Content'))
 
-WebUI.setText(findTestObject('Page_Swag Labs/input_Swag Labs_user-name'), 'standard_user')
+WebUI.delay(1)
 
-WebUI.setText(findTestObject('Page_Swag Labs/input_Swag Labs_password'), 'secret_sauce')
+WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Page_Swag Labs/input_Swag Labs_login-button'))
+WebUI.setText(findTestObject('Login Page Saucedemo/input_Username'), 'locked_out_user')
 
-WebUI.waitForPageLoad(5)
+WebUI.setText(findTestObject('Login Page Saucedemo/input_Password'), 'secret_sauce')
+
+WebUI.delay(1)
+
+WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Login Page Saucedemo/click_Login Button'))
+
+WebUI.getText(findTestObject('Login Page Saucedemo/message_Error Message'))
+
+WebUI.takeScreenshot()
 
 WebUI.delay(1)
 
