@@ -31,9 +31,9 @@ WebUI.delay(1)
 
 WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('Login Page Saucedemo/input_Username'), 'locked_out_user')
+WebUI.setText(findTestObject('Login Page Saucedemo/input_Username'), 'test')
 
-WebUI.setText(findTestObject('Login Page Saucedemo/input_Password'), 'secret_sauce')
+WebUI.setText(findTestObject('Login Page Saucedemo/input_Password'), 'test')
 
 WebUI.delay(1)
 
@@ -41,7 +41,7 @@ WebUI.takeScreenshot()
 
 WebUI.click(findTestObject('Login Page Saucedemo/click_Login Button'))
 
-WebUI.getText(findTestObject('Login Page Saucedemo/message_Locked Out User'))
+WebUI.getText(findTestObject('Login Page Saucedemo/message_Invalid Credentials'))
 
 WebUI.takeScreenshot()
 
