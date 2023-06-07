@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>login saucedemo</name>
+   <name>Login With Performance Glitch User</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>45a741c9-186c-49c3-a795-72a479a782be</testCaseGuid>
+   <testCaseGuid>98dcc4e2-1d82-40ec-ae5e-63c40a0c7f19</testCaseGuid>
 </TestCaseEntity>
